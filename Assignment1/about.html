@@ -1,41 +1,60 @@
+<!--About-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--link rel="stylesheet" type="text/css" href="style.css"-->
         <title>Assignment1</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- full-size monitor style sheet-->
+        <link href="full.css" rel="stylesheet" type="text/css" media="only screen and
+        (min-width:960px)">
+        <!-- tablet style sheet-->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen
+        and (min-width:481px) and (max-width:960px)">
+        <!-- phone style sheet-->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen
+        and (max-width:480px)">
     </head>   
     <body>
         <div id="wrapper">
             <h1> My Website </h1>
-            
             <div id="banner">
-                <h1>Welcome to my Website</h1>
+                <!--Nav Section-->
                 <nav>
                     <h5> 
                         <a href="index.html">Home</a>
                         <a href="about.html">About Me</a>
                         <a href="project.html">Projects</a>
                         <a href="feedback.html">Contacts</a>
+                        <a href="reference.html">References</a>
                     </h5>
                 </nav>
-                <div id="left-column"> 
-                    <h3>Links...</h3> 
-                    <ul> 
-                        <li> 
-                            <a href="http://www.w3schools.com/">Reference:W3Schools</a>
-                        </li> 
-                        <li> 
-                            <a href="feedback.html">Feedback Form</a>
-                        </li> 
-                        <li> 
-                            <a href="video.html">Video</a>
-                        </li> 
-                    </ul>
-                    <h4>My Video</h4> 
-                    <video controls poster="on_record.png" id="video"></video>
-                    <br>
-                    <button onclick="playPause()">Play or pause the video</button>
+            </div>
+            <!--Header Section-->
+            <div id="left-column">
+                <h4>About me</h4> 
+            </div>
+            <!--Content Section-->
+            <div id = "right-column"> 
+                <figure class="box">
+                    <img src="IMG_0922.png" style="width: 30%;" alt="about">
+                </figure>
+                <figure class ="box">
+                    <figcaption>My championship rings</figcaption>
+                    <img src="rings.PNG" style="width:60%;" alt="img1">
+                </figure>
+                <figure class = "box">
+                    <figcaption>My yu-gi-oh! collection</figcaption>
+                    <img src="yugi.PNG" style="width: 50%; max-height:200px;" alt="img2">
+                </figure>
+                <div class = "box">
+                    <p>My Video</p>
+                    <video style="width: 100%; height: 180px;" poster="king.png" id="video" controls>
+                        <source src="IMG_0919.mp4" type="video/ogg">" type="video/mp4">
+                        <source src="IMG_0919.mp4" type="video/ogg">
+                    </video>
+                    <button style="width:200px; height:40px;" onclick="playPause()">Play or pause the video </button>
                     <script>
                         var myVideo=document.getElementById("video");
                         function playPause()
@@ -47,20 +66,16 @@
                     </script>
                     
                 </div>
-                <div id="right-column"> 
-                    <h2>About me </h2> 
-                    <p>Hi I'm Kevin Domaoa and I currently am a student at Ontario Tech University. Some of my hobbies are basketball, video games and reading. </p>
-                    <div class ="big-box"><img src="king.png" width="150" height="400"></div>
-                    <div class="box"><img src="fortnite.jpg" width="150" height="150"></div> 
-                    <div class="box"><img src="mazeRun.jpg" width="150" height="150"></div>
-                </div> 
-                </div>
-                <!--The clear class style clears (removes) float--> 
-                <div class="clear"></div> 
-                <div id="footer"> 
-                    <h5>Site by Web Development Thursday Class</h5> 
+            </div>   
+            <!--Footer-->
+            <div id="footer">
+                <address>
+                    <p1>Email:<a href="kevin.domaoa@ontariotechu.net"></a> kevin.domaoa@ontariotechu.net</p1>
+                </address>
+                <h6>©2024 by kevin domaoa</h6> 
             </div>
+            <!--The clear class style clears (removes) float--> 
+            <div class="clear"></div>
         </div>
     </body>
-    
 </html>

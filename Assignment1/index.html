@@ -1,48 +1,54 @@
+<!--Home-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Assigntment1</title>
+        <title>Assignment1</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- full-size monitor style sheet-->
+        <link href="full.css" rel="stylesheet" type="text/css" media="only screen and
+        (min-width:960px)">
+        <!-- tablet style sheet-->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen
+        and (min-width:481px) and (max-width:960px)">
+        <!-- phone style sheet-->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen
+        and (max-width:480px)">
     </head>   
     <body>
         <div id="wrapper">
             <h1> My Website </h1>
-            
             <div id="banner">
-                <h1>Welcome to my Website</h1>
+                <!--Nav Section-->
                 <nav>
                     <h5> 
                         <a href="index.html">Home</a>
                         <a href="about.html">About Me</a>
                         <a href="project.html">Projects</a>
                         <a href="feedback.html">Contacts</a>
+                        <a href="reference.html">References</a>
                     </h5>
                 </nav>
-                <div id="left-column"> 
-                    <h3>Links...</h3> 
-                    <ul> 
-                        <li> 
-                            <a href="http://www.w3schools.com/">Reference:W3Schools</a>
-                        </li> 
-                        <li> 
-                            <a href="feedback.html">Feedback Form</a>
-                        </li> 
-                        <li> 
-                            <a href="video.html">Video</a>
-                        </li> 
-                    </ul> 
-                </div>
-                <div id="right-column"> 
-                    <h2>Welcome to my Home Page </h2> 
-                    
-                </div> 
-                </div>
-                <!--The clear class style clears (removes) float--> 
-                <div class="clear"></div> 
-                <div id="footer"> 
-                    <h5>Site by Web Development Thursday Class</h5> 
             </div>
+            <article>
+            <!--Header Section-->
+            <div id="left-column">
+                <h2>Welcome to my Homepage</h2>
+            </div>
+            <!--Content Section-->
+            <div id="right-column">
+                <figure>
+                    <img src="otech.png" width="200" height="auto">
+                </figure>
+            </div> 
+            </article> 
+            <div id="footer">
+                <address>
+                    <p1>Email:<a href="kevin.domaoa@ontariotechu.net"></a> kevin.domaoa@ontariotechu.net</p1>
+                </address>
+                <h6>©2024 by kevin domaoa</h6>
+            <!--The clear class style clears (removes) float--> 
+            <div class="clear"></div> 
         </div>
     </body>
     
