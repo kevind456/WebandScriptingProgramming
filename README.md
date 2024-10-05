@@ -1,3 +1,3 @@
-Refrences
-https://github.com/ghazalbangash/ResumeWebProject
+Refrences:
+https://github.com/ghazalbangash/ResumeWebProject,
 Files from canvas
